@@ -38,7 +38,7 @@ string* create2DArray(int rows,int colmns) {
 	return head;
 }
 string* addEntry(string* dynamicArray,int size, string newEntry1,string newEntry2) {
-	if(size == usernum) { //放大後縮小 
+	if(size == usernum) { //放大重開 
 		usernum *= 2;
 		string* head = new string [usernum*2];
 		for(int i=0;i<size-1;i++){
