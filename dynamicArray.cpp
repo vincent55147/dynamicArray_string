@@ -40,7 +40,7 @@ string* create2DArray(int rows,int colmns) {
 string* addEntry(string* dynamicArray,int size, string newEntry1,string newEntry2) {
 	if(size == usernum) { //放大重開 
 		usernum *= 2;
-		string* head = new string [usernum*2];
+		string* head = new string [usernum];
 		for(int i=0;i<size-1;i++){
 			head[2*i]=dynamicArray[2*i];
 			head[2*i+1]=dynamicArray[2*i+1];
@@ -81,11 +81,3 @@ void print(string *dynamicArray,int size){
 		cout<<dynamicArray[2*i]<<" "<<dynamicArray[2*i+1]<<endl;
 	}
 }
-
-
-
-
-
-
-
-
